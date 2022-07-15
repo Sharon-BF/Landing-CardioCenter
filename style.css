@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    /* color: #03045E; */
 }
 
 body{
@@ -126,6 +128,10 @@ header{
     padding-top: 10px;
 }
 
+.baner_text h1{
+    font-size: 40px;
+}
+
 .btn_baner_contact{
     margin-top: 35px;
     padding: 8px 15px;
@@ -137,4 +143,58 @@ header{
     font-weight: bold;
     cursor: pointer;
 }
+
+
+/* SERVICIOS*/
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios p{
+    font-size: 30px;
+    color: #03045E;
+    font-weight: 500;
+    margin: 36px 0px;
+}
+
+.servicios .container-servicios{
+    display: flex;
+    height: 424px;
+    width: 994px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.container-servicio{
+    position: relative;
+    /* margin: 10px; */
+    
+}
+
+.container-servicio a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fbfbfb;
+    background-color: #3F4193;
+    height: 45px;
+    width: 237px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(73, 100, 123, 0.85);
+    
+}
+
+.container-servicio img{
+    border-radius: 15px;
+}
+
+.container-servicio i{
+    margin: 0 20px;
+    font-size: 20px;
+}
+
 
