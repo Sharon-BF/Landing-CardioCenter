@@ -19,8 +19,6 @@ header{
     z-index: 2;
     background-color:#fbfbfb;
     box-shadow: 0 4px 25px -22px black;
-    
-
 }
 
 .container_header{
@@ -29,7 +27,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10%;
     max-width: 1200px;
     
     
@@ -52,10 +49,13 @@ header{
 
 .menu{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu nav ul{
     display: flex;
+    padding-top: 15px;
 }
 
 .menu nav ul li{
@@ -79,7 +79,8 @@ header{
 }
 
 .btn_header_contact{
-    margin: 18px 0px;
+    height: 40px;
+    /* margin: 18px 0px; */
     padding: 0px 25px;
     border: none;
     background-color:#3F4193;
@@ -90,13 +91,6 @@ header{
     cursor: pointer;
 }
 
-/*PORTADA - BANER*/
-/* .conatiner-info{
-    height: 100vh;
-    margin-top: 80px;
-    width: 100%;
-} */
-
 .baner{
     margin-top: 80px;
     display:flex;
@@ -106,9 +100,6 @@ header{
 
 .container-baner{
     display: flex;
-    max-width: 1200px;
-    height: 425px;
-    justify-content: space-between;
     align-items: center;
     height: 425px;
     padding: 0px 20%;
@@ -117,9 +108,6 @@ header{
 .baner_img{
 }
 
-#portadapng{
-    padding-top: 6px;
-}
 .baner_text{
     color: #03045E;
 }
@@ -130,6 +118,7 @@ header{
 
 .baner_text h1{
     font-size: 40px;
+    font-weight: 700;
 }
 
 .btn_baner_contact{
@@ -142,22 +131,26 @@ header{
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+    height: 40px;
 }
 
-
-/* SERVICIOS*/
-.servicios{
+.sections{
+    height: 420px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.servicios p{
-    font-size: 30px;
-    color: #03045E;
+.sub-tittle{
+    font-size: 28px;
     font-weight: 500;
-    margin: 36px 0px;
+    margin: 25px 0px;
+}
+
+
+/* SERVICIOS */
+.servicios{
+    color: #03045E;
 }
 
 .servicios .container-servicios{
@@ -168,13 +161,11 @@ header{
     justify-content: space-between;
 }
 
-.container-servicio{
+.container-card{
     position: relative;
-    /* margin: 10px; */
-    
 }
 
-.container-servicio a{
+.container-card a{
     position: absolute;
     top: 0;
     left: 0;
@@ -185,16 +176,152 @@ header{
     display: flex;
     align-items: center;
     background-color: rgba(73, 100, 123, 0.85);
-    
+    text-decoration: none;
 }
 
-.container-servicio img{
+.container-card img{
     border-radius: 15px;
 }
 
-.container-servicio i{
+.container-card i{
     margin: 0 20px;
     font-size: 20px;
 }
 
+
+/* TRAYECTORIA */
+.trayectoria{
+    background-color: rgba(4, 49, 90, 0.55);
+    color: #fbfbfb;
+}
+
+.container-trayectoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doctor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.doctor img{
+    margin: 0px 35px;
+    width: 185px;
+}
+
+.doctor p{
+    margin: 5px 0px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.texto-trayectoria{
+    padding: 0px 35px;
+    background-color: rgba(215, 227, 238, 1);
+    border-radius: 25px;
+    height: 188px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.texto-trayectoria p{
+    margin: 10px 0px;
+    color: #03045E;
+    font-size: 14px;
+}
+
+.texto-trayectoria p i{
+    margin-right: 10px;
+}
+
+.container-texto-trayectoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 15px;
+}
+
+/* SOLICITAR SERVICIO */
+.solicitud{
+    background-color: rgba(245, 245, 245, 1);
+    color: #03045E;
+}
+
+.formulario{
+    background-color: rgba(94, 123, 149, 0.72);
+    border-radius: 35px;
+    height: 265px;
+    width: 700px;
+    display: flex;
+    padding: 25px 10PX;
+    position: relative;
+    top: 25px;
+    left: 30px;
+}
+.conatiner-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    color: #fbfbfb;
+}
+
+.redes i{
+    color: #fbfbfb;
+    margin: 15px 8px;
+}
+
+.img-fondo{
+    position: absolute;
+}
+
+.img-fondo img{
+    height: 265px;
+}
+
+
+/* CASOS DE EXITO */
+.casos-exito{
+    color: #03045E;
+}
+
+.container-casos{
+    display: flex;
+    height: 424px;
+    width: 994px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.container-card p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fbfbfb;
+    background-color: #3F4193;
+    height: 45px;
+    width: 324px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(73, 100, 123, 0.85);
+    text-decoration: none;
+    padding-left: 15px;
+}
 
