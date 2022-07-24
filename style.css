@@ -3,11 +3,12 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    /* color: #03045E; */
+    
 }
-
+ 
 body{
     background-color: #fbfbfb;
+    box-sizing: content-box;
 }
 
 header{
@@ -27,6 +28,7 @@ header{
 .container_header{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 nav{
@@ -88,16 +90,17 @@ nav{
     margin-top: 60px;
     display:flex;
     background: linear-gradient(94.29deg, #B5E4EE 0.83%, #CBEAF0 34.22%, rgba(216, 248, 255, 0.64) 66.32%, rgba(217, 243, 249, 0.19) 100%);
-    /* width: 100%; */
+    width: 100%;
 }
 
 .container-baner{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 425px;
+    height: 100%;
     /* padding: 0px 20%; */
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .baner_img img{
@@ -111,6 +114,7 @@ nav{
     flex-direction: column;
     align-items: center;
     margin: 15px 0px;
+    text-align: center;
 }
 
 .baner_text p{
@@ -150,18 +154,21 @@ nav{
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 60px;
-    
     padding-top: 80px;
     /* margin: 25px 0px; */
 }
 
 
 /* SERVICIOS */
+#sec-servicios{
+    width: 100%!;
+}
 .servicios{
     color: #03045E;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .servicios .container-servicios{
@@ -176,7 +183,7 @@ nav{
 
 .container-card{
     position: relative;
-    margin-inline:10px;
+    margin:10px 10px;
 }
 
 .container-card a{
@@ -207,12 +214,14 @@ nav{
 .trayectoria{
     background-color: rgba(4, 49, 90, 0.55);
     color: #fbfbfb;
+    
 }
 
 .container-trayectoria{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .doctor{
@@ -220,6 +229,7 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* margin-bottom: 15px; */
 }
 
 .doctor img{
@@ -242,6 +252,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 15px 0px;
 }
 .texto-trayectoria p{
     margin: 10px 0px;
@@ -264,34 +275,67 @@ nav{
 .solicitud{
     background-color: rgba(245, 245, 245, 1);
     color: #03045E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-solicitud{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-solicitud img{
+    max-width: 20rem;
+    margin: 25px;
+    /* margin: 0px 20px; */
+}
+
+.container-solicitud{
+    background-image: url(./assets/fondoSolicitud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin: 0px 20px; */
+    border-radius: 35px;
+    max-width: 25rem;
+    margin: 0px 15px;
+
 }
 
 .formulario{
     background-color: rgba(94, 123, 149, 0.72);
     border-radius: 35px;
-    height: 265px;
-    width: 700px;
+    /* height: 265px; */
+    
     display: flex;
-    padding: 25px 10PX;
+    padding: 25px 20px;
     position: relative;
-    top: 25px;
-    left: 30px;
+    top: 0px;
+    left: 0px;
 }
+
+.container-inputs{
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
 .conatiner-form{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form{
+/* .form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 10px 0px;
-}
+} */
 
-.redes{
+/* .redes{
     display: flex;
     flex-direction: column;
     color: #fbfbfb;
@@ -299,16 +343,13 @@ nav{
 
 .redes i{
     color: #fbfbfb;
-    margin: 15px 8px;
-}
+    margin: 15px 0px;
+} */
 
-.img-fondo{
-    position: absolute;
-}
-
-.img-fondo img{
-    height: 265px;
-}
+/*.img-fondo img{
+    width: 100%;
+    border-radius: 35px;
+} */
 
 
 /* CASOS DE EXITO */
@@ -318,10 +359,11 @@ nav{
 
 .container-casos{
     display: flex;
-    height: 424px;
-    width: 994px;
+    /* height: 424px; */
+    width: 100%;
     margin: auto;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container-card p{
@@ -339,3 +381,56 @@ nav{
     padding-left: 15px;
 }
 
+footer{
+    background-color: #03045E;
+    display: flex;
+    color: #FFFFFF;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.container-footer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.section-cardio-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-cardio-center .redes{
+    margin:15px 0px;
+}
+
+.section-cardio-center i{
+    margin: 10px;
+}
+
+.horario-atencion{
+    margin-inline: 50px;
+}
+
+.secciones-landing{
+    display: flex;
+    flex-direction: column;
+    
+}
+.secciones-landing a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@media (max-width: 800px){
+    .menu{
+        display: none;
+    }
+}

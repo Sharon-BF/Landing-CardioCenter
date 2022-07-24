@@ -18,173 +18,190 @@
 </head>
 
 <body>
-    <header>
-        <div class=" container">
-            <nav>
-                <div class="logo_section">
-                    <i class="fa-solid fa-bars fa-xl"></i>
-                    <img class="logo" src="./assets/Logo.png" alt="">
+    <div class="container-principal">
+        <header>
+            <div class=" container">
+                <nav>
+                    <div class="logo_section">
+                        <!-- <i class="fa-solid fa-bars fa-xl"></i> -->
+                        <img class="logo" src="./assets/Logo.png" alt="">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#sec-servicios">Servicios</a></li>
+                            <li><a href="#especialista">Especialista</a></li>
+                            <li><a href="#casos-exito">Casos de Éxito</a></li>
+                        </ul>
+                        <input type="button" class="btn_header_contact" value="Contactar">
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- PORTADA -->
+        <div class="baner">
+            <div class="container-baner">
+                <div class="baner_img">
+                    <img src="./assets/portada.svg" id="portadapng" alt="">
                 </div>
 
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#sec-servicios">Servicios</a></li>
-                        <li><a href="#especialista">Especialista</a></li>
-                        <li><a href="#casos-exito">Casos de Éxito</a></li>
-                    </ul>
-
-                    <input type="button" class="btn_header_contact" value="Contactar">
+                <div class="baner_text">
+                    <h1>Cirujano Cardiovascular</h1>
+                    <p>Por una familia feliz <br> tómale importancia a tu corazón</p>
+                    <input type="button" class="btn_baner_contact" value="Agendar Cita">
                 </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- PORTADA -->
-    <div class="baner">
-        <div class="container-baner">
-            <div class="baner_img">
-                <img src="./assets/portada.svg" id="portadapng" alt="">
-            </div>
-
-            <div class="baner_text">
-                <h1>Cirujano Cardiovascular</h1>
-                <p>Por una familia feliz <br> tómale importancia a tu corazón</p>
-                <input type="button" class="btn_baner_contact" value="Agendar Cita">
             </div>
         </div>
+
+        <!-- SERVICIOS -->
+        <section id="sec-servicios">
+            <div class="servicios sections">
+                <p class="sub-tittle">Servicios</p>
+                <div class="container-servicios">
+                    <div class="container-card">
+                        <img class="imageServicios" src="./assets/cirugiaCardiaca.png" alt="">
+                        <a class="tittleServicio" href=""><i class="fi fi-rr-doctor"></i>Cirugía Cardiaca</a>
+                    </div>
+
+                    <div class="container-card">
+                        <img class="imageServicios" src="./assets/patologiaAorta.png" alt="">
+                        <a class="tittleServicio" href=""><i class="fi fi-rr-doctor"></i>Patología de Aorta</a>
+                    </div>
+
+                    <div class="container-card">
+                        <img class="imageServicios" src="./assets/ecmo.png" alt="">
+                        <a class="tittleServicio" href=""><i class="fi fi-rr-doctor"></i>ECMO</a>
+                    </div>
+
+                    <div class="container-card">
+                        <img class="imageServicios" src="./assets/corazonArtificial.png" alt="">
+                        <a class="tittleServicio" href=""><i class="fi fi-rr-doctor"></i>Corazón Artificial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAYECTORIA PROFESIONAL -->
+        <section id="especialista">
+            <div class="trayectoria sections">
+                <p class="sub-tittle">Trayectoria Profesional</p>
+                <div class="container-trayectoria">
+                    <div class="doctor">
+                        <div class="imagen-perfil">
+                            <img src="./assets/DoctorFranz.png" alt="">
+                        </div>
+                        <div class="nombre">
+                            <p>Dr. Franz Ronald <br> Soplopuco Palacios</p>
+                        </div>
+                    </div>
+                    <div class="container-texto-trayectoria">
+                        <div class="texto-trayectoria">
+                            <p><i class="fa fa-heartbeat"></i>Coordinador quirúrgico de Transplante Cardiaco y corazones
+                                artificiales
+                                en INCOR</p>
+                            <p><i class="fa fa-heartbeat"></i>Primer corazón artificial en el Perú</p>
+                            <p><i class="fa fa-heartbeat"></i>2 transplantes cardiacos en 24 horas</p>
+                        </div>
+                        <div class="botton-trayectoria">
+                            <input type="button" class="btn_baner_contact" value="Agendar Cita">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMS DE SOLIICITUD -->
+        <div class="solicitud sections">
+            <p class="sub-tittle">Solicitar Servicio</p>
+            <div class="sec-solicitud">
+                <!-- <div class="img-fondo"> -->
+                <img src="./assets/citaMedica.png" alt="">
+                <!-- </div> -->
+                <div class="container-solicitud">
+                    <div class="container formulario">
+                        <form class="row g-4 container-inputs">
+                            <div class="col-md-12 form">
+                                <input type="text" class="form-control form-control-sm" placeholder="Apellidos"
+                                    required>
+                            </div>
+                            <div class="col-md-12 form">
+                                <input type="text" class="col-6 form-control form-control-sm" placeholder="Nombres">
+                            </div>
+                            <div class="col-md-12 form">
+                                <input type="text" class="col-6 form-control form-control-sm" placeholder="DNI">
+                            </div>
+                            <div class="col-md-12 form">
+                                <input type="text" class="col-6 form-control form-control-sm" placeholder="Teléfono">
+                            </div>
+                            <div class="col-md-12 form">
+                                <input type="text" class="col-6 form-control form-control-sm" placeholder="E-mail">
+                            </div>
+                            <!-- <div class="col-md-6 form">
+                                <select name="" id="" class="col-6 form-select form-select-sm">Seleccionar</select>
+                            </div> -->
+                            <div class="col-md-12 form">
+                                <textarea name="" id="" class="form-control form-control-sm" cols="30" rows="3"
+                                    placeholder="Consulta"></textarea>
+                            </div>
+
+                            <div>
+                                <input class="btn_header_contact" type="button" value="Enviar">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CASOS DE EXITO -->
+        <section id="casos-exito">
+            <div class="casos-exito sections">
+                <p class="sub-tittle">Casos de Éxito</p>
+                <div class="container-casos">
+                    <div class="container-card">
+                        <img src="./assets/transplante1.png" alt="">
+                        <p>Transplante de Corazón</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="./assets/artificial.png" alt="">
+                        <p>Corazón Artificial</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="./assets/transplante2.png" alt="">
+                        <p>Transplante de Corazón</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="sections">
+            <div class="container-footer">
+                <div class="section-cardio-center">
+                    <div class="img-logo">
+                        <img src="./assets/Logo.png" alt="">
+                    </div>
+                    <div class="redes">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                    </div>
+                </div>
+                <div class="horario-atencion">
+                    <p>Horario de atención: </p>
+                    <p><i class="fa-solid fa-calendar"></i> Lunes a Viernes</p>
+                    <p><i class="fa-solid fa-clock"></i> 9am - 7pm</p>
+
+                </div>
+                <div class="secciones-landing">
+                    <a href="">Inicio</a>
+                    <a href="">Servicios</a>
+                    <a href="">Especialista</a>
+                    <a href="">Casos de Éxito</a>
+                </div>
+                
+            </div>
+        </footer>
     </div>
-
-    <!-- SERVICIOS -->
-    <section id="sec-servicios">
-        <div class="servicios sections">
-            <p class="sub-tittle">Servicios</p>
-            <div class="container-servicios">
-                <div class="container-card">
-                    <img class="imageServicios" src="./assets/cirugiaCardiaca.png" alt="">
-                    <a class="tittleServicio" href=""><i class="fi fi-rr-doctor"></i>Cirugía Cardiaca</a>
-                </div>
-
-                <div class="container-card">
-                    <img class="imageServicios" src="./assets/patologiaAorta.png" alt="">
-                    <a class="tittleServicio" href=""><i class="fi fi-rr-doctor"></i>Patología de Aorta</a>
-                </div>
-
-                <div class="container-card">
-                    <img class="imageServicios" src="./assets/ecmo.png" alt="">
-                    <a class="tittleServicio" href=""><i class="fi fi-rr-doctor"></i>ECMO</a>
-                </div>
-
-                <div class="container-card">
-                    <img class="imageServicios" src="./assets/corazonArtificial.png" alt="">
-                    <a class="tittleServicio" href=""><i class="fi fi-rr-doctor"></i>Corazón Artificial</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TRAYECTORIA PROFESIONAL -->
-    <section id="especialista">
-        <div class="trayectoria sections">
-            <p class="sub-tittle">Trayectoria Profesional</p>
-
-            <div class="container-trayectoria">
-                <div class="doctor">
-                    <div class="imagen-perfil">
-                        <img src="./assets/DoctorFranz.png" alt="">
-                    </div>
-                    <div class="nombre">
-                        <p>Dr. Franz Ronald <br> Soplopuco Palacios</p>
-                    </div>
-                </div>
-
-                <div class="container-texto-trayectoria">
-                    <div class="texto-trayectoria">
-                        <p><i class="fa fa-heartbeat"></i>Coordinador quirúrgico de Transplante Cardiaco y corazones
-                            artificiales
-                            en INCOR</p>
-                        <p><i class="fa fa-heartbeat"></i>Primer corazón artificial en el Perú</p>
-                        <p><i class="fa fa-heartbeat"></i>2 transplantes cardiacos en 24 horas</p>
-                    </div>
-
-                    <div class="botton-trayectoria">
-                        <input type="button" class="btn_baner_contact" value="Agendar Cita">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- FORMS DE SOLIICITUD -->
-    <div class="solicitud sections">
-        <p class="sub-tittle">Solicitar Servicio</p>
-        <div class="container-solicitud">
-            <div class="img-fondo">
-                <img src="./assets/fondoSolicitud.png" alt="">
-            </div>
-            <div class="formulario">
-                <div class="container conatiner-form">
-                    <div class="row">
-                        <div class="col-6 form">
-                            <input type="text" class="form-control form-control-sm" placeholder="Apellidos">
-                        </div>
-                        <div class="col-6 form">
-                            <input type="text" class="col-6 form-control form-control-sm" placeholder="Nombres">
-                        </div>
-                        <div class="col-6 form">
-                            <input type="text" class="col-6 form-control form-control-sm" placeholder="DNI">
-                        </div>
-                        <div class="col-6 form">
-                            <input type="text" class="col-6 form-control form-control-sm" placeholder="Teléfono">
-                        </div>
-                        <div class="col-6 form">
-                            <input type="text" class="col-6 form-control form-control-sm" placeholder="E-mail">
-                        </div>
-                        <div class="col-6 form">
-                            <select name="" id="" class="col-6 form-select form-select-sm">Seleccionar</select>
-                        </div>
-                        <div class="col-12 form">
-                            <textarea name="" id="" class="form-control form-control-sm" cols="30" rows="2"
-                                placeholder="Consulta"></textarea>
-                        </div>
-
-                    </div>
-                    <div>
-                        <input class="btn_header_contact" type="button" value="Enviar">
-                    </div>
-                </div>
-
-                <div class="redes">
-                    <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- CASOS DE EXITO -->
-    <section id="casos-exito">
-        <div class="casos-exito sections">
-            <p class="sub-tittle">Casos de Éxito</p>
-            <div class="container-casos">
-                <div class="container-card">
-                    <img src="./assets/transplante1.png" alt="">
-                    <p>Transplante de Corazón</p>
-                </div>
-                <div class="container-card">
-                    <img src="./assets/artificial.png" alt="">
-                    <p>Corazón Artificial</p>
-                </div>
-                <div class="container-card">
-                    <img src="./assets/transplante2.png" alt="">
-                    <p>Transplante de Corazón</p>
-                </div>
-            </div>
-        </div>
-    </section>
 </body>
 
 </html>
