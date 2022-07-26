@@ -80,10 +80,21 @@ nav{
     border: none;
     background-color:#3F4193;
     border-radius: 5px;
-    color: #FFFFFF;
     font-size: 14px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
     cursor: pointer;
+    color: #FFFFFF;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btn_header_contact a:hover{
+    color: #FFFFFF;
 }
 
 .baner{
@@ -186,7 +197,7 @@ nav{
     margin:10px 10px;
 }
 
-.container-card a{
+.container-card li{
     position: absolute;
     top: 0;
     left: 0;
@@ -198,6 +209,7 @@ nav{
     align-items: center;
     background-color: rgba(73, 100, 123, 0.85);
     text-decoration: none;
+    cursor: default;
 }
 
 .container-card img{
@@ -307,8 +319,6 @@ nav{
 .formulario{
     background-color: rgba(94, 123, 149, 0.72);
     border-radius: 35px;
-    /* height: 265px; */
-    
     display: flex;
     padding: 25px 20px;
     position: relative;
@@ -319,6 +329,12 @@ nav{
 .container-inputs{
     padding: 15px;
     margin-bottom: 15px;
+}
+
+.button_enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .conatiner-form{
@@ -354,7 +370,8 @@ nav{
 
 /* CASOS DE EXITO */
 .casos-exito{
-    color: #03045E;
+    color: #fbfbfb;
+    background-color: rgba(4, 49, 90, 0.55);
 }
 
 .container-casos{
@@ -381,24 +398,45 @@ nav{
     padding-left: 15px;
 }
 
+.container-card-casos{
+    box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.2);
+    transition: all 400ms ease;
+    /* transition: width 3s, height 3s; */
+}
+
+.container-card-casos:hover{
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+    transform: translateY(-3%);
+}
+
+.container-card-casos img{
+    width: 324px;
+    height: 216px;
+}
+
+
+/* FOOTER */
 footer{
-    background-color: #03045E;
+    background-color: #fbfbfb;
     display: flex;
-    color: #FFFFFF;
+    color: #03045E;
     width: 100%;
     justify-content: center;
     align-items: center;
     padding-top: 25px;
+    font-size: 14px;
+    margin: auto;
 }
 
 .container-footer{
-    width: 100%;
-    margin: auto;
+    padding-top: 25px;
+    max-width: 950px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    
+    margin: auto;
+    /* justify-content: center; */
 }
 
 .section-cardio-center{
@@ -411,12 +449,17 @@ footer{
     margin:15px 0px;
 }
 
+.section-cardio-center .redes a{
+    color:#03045E;
+}
+
 .section-cardio-center i{
     margin: 10px;
 }
 
 .horario-atencion{
     margin-inline: 50px;
+    /* margin: 0px 15rem; */
 }
 
 .secciones-landing{
@@ -426,11 +469,15 @@ footer{
 }
 .secciones-landing a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: #03045E;
+    margin: 5px;
 }
 
 @media (max-width: 800px){
     .menu{
+        display: none;
+    }
+    .secciones-landing{
         display: none;
     }
 }
