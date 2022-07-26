@@ -137,37 +137,37 @@
                         <div class="container formulario">
                             <form class="row g-4 container-inputs" action="https://formsubmit.co/sharon.camilabf@gmail.com" method="POST">
 
-                                <input type="hidden" name="_template" value="box">
+                                <!-- <input type="hidden" name="_template" value="box">
                                 <input type="hidden" name="_cc" value=" otro@email.com , aúnotro@email.com ">
                                 <input type="hidden" name="_autoresponse" value="Gracias por escribirnos, nos pondremos en contacto contigo">
-                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html"> -->
 
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control form-control-sm" placeholder="Apellidos"
+                                    <input id="input_apellido" type="text" class="form-control form-control-sm" placeholder="Apellidos"
                                         required>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="text" class="col-6 form-control form-control-sm" placeholder="Nombres"
+                                    <input id="input_nombre" type="text" class="col-6 form-control form-control-sm" placeholder="Nombres"
                                         required>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="text" class="col-6 form-control form-control-sm" placeholder="DNI"
+                                    <input id="input_dni" type="text" maxlength="8" class="col-6 form-control form-control-sm" placeholder="DNI"
                                         required>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="text" class="col-6 form-control form-control-sm"
-                                        placeholder="Teléfono">
+                                    <input id="input_telefono" type="number" maxlength="9" class="col-6 form-control form-control-sm"
+                                        placeholder="Número de celular" required>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="email" name="email" class="col-6 form-control form-control-sm" placeholder="E-mail"
+                                    <input id="input_email" type="email" name="email" class="col-6 form-control form-control-sm" placeholder="E-mail"
                                         required>
                                 </div>
                                 <div class="col-md-12">
-                                    <textarea type="text" name="message" id="" class="form-control form-control-sm" cols="30" rows="3"
+                                    <textarea id="input_consulta" type="text" name="message" id="" class="form-control form-control-sm" cols="30" rows="3"
                                         placeholder="Consulta" required></textarea>
                                 </div>
                                 <div class="button_enviar">
-                                    <button type="submit" class="btn_header_contact" style="color:white ;">Enviar</button>
+                                    <button id="btn_enviar" type="submit" class="btn_header_contact" style="color:white ;">Enviar</button>
                                 </div>
 
                             </form>
@@ -176,22 +176,22 @@
                 </div>
             </div>
 
-            <form action="https://formsubmit.co/sharon.camilabf@gmail.com" method="POST">
+            <!-- <form action="https://formsubmit.co/sharon.camilabf@gmail.com" method="POST"> -->
                 <!-- asunto -->
-                <input type="hidden" name="_template" value="box">
-                <input type="hidden" name="_subject" value="Cardio Center consulta">
+                <!-- <input type="hidden" name="_template" value="box"> -->
+                <!-- <input type="hidden" name="_subject" value="Cardio Center consulta"> -->
                 <!-- Contenido del mensaje -->
                   <!-- email -->
-                  <input type="emall" name="email" placeholder="Emall Address" required>
+                  <!-- <input type="emall" name="email" placeholder="Emall Address" required> -->
                   <!-- message -->
-                  <input type="text" name="message" placeholder="write your message here" required>
+                  <!-- <input type="text" name="message" placeholder="write your message here" required> -->
                 <!-- a donde redirige una vez se haya enviado el correo  -->
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
-                <input type="hidden" name="_autoresponse" value="Gracias por escribirnos, nos pondremos en contacto contigo">
-                <input type="hidden" name="_captcha" value="false">
+                <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html"> -->
+                <!-- <input type="hidden" name="_autoresponse" value="Gracias por escribirnos, nos pondremos en contacto contigo"> -->
+                <!-- <input type="hidden" name="_captcha" value="false"> -->
                 <!-- btn enviar  -->
-                <button type="submit">Send</button>
-              </form> 
+                <!-- <button type="submit">Send</button> -->
+              <!-- </form>  -->
 
 
         </section>
